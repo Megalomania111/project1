@@ -1,0 +1,543 @@
+*
+	box-sizing: border-box
+
+body, html
+	height: 100%
+body
+	height: 100%
+	font-size: 16px 
+.clear 
+	clear: both
+	
+.main_head,
+section,
+footer
+	position: relative
+	
+	
+.main_head	
+	max-width: 100%
+	height: 100%
+	background: url(../img/header_img.jpg) no-repeat center center
+	background-size: cover
+	display: flex
+	justify-content: flex-start
+	flex-direction: column
+	.header_bar
+		background: #02918c
+		position: relative
+		height: 94px
+		max-width: 100% 	
+		
+		.bar
+			display: flex
+			justify-content: space-between
+			align-items: center
+			max-width: 1280px
+			margin: 0 auto
+			margin-top: 20px  
+			.logo
+				padding:  0 0 0 50px
+				display: block
+			.logo a
+				color: #fff
+				text-transform: uppercase
+				font-family: 'Open Sans', sans-serif
+				font-size: 1.875em
+				font-weight: bold
+				letter-spacing: 1px
+				span
+					color: #cfc91d
+			.top_mnu
+				display: flex
+				justify-content: flex-end
+				list-style: none
+			.top_mnu li
+				display: inline
+				margin-right: 50px 
+				padding: 0
+			.top_mnu a
+				text-decoration: none
+				color: #fff
+				text-transform: uppercase
+				font-weight: bold
+				font-family: 'Open Sans', sans-serif
+				font-size: 0.750em
+			.top_mnu a:hover
+				color: #cfc91d	
+			.top_mnu_btn
+				border: 0
+				background: transparent
+				padding: 3px
+				position: relative
+				margin-right: 20px
+				height: 40px
+				width: 40px
+				display: none
+				.top
+					position: absolute
+					height: 2px
+					width: 100%
+					background: white
+					top: 20%				
+					left: 0
+				.med
+					position: absolute
+					height: 2px
+					width: 100%
+					background: white
+					top: 50%				
+					left: 0
+				.bott
+					position: absolute
+					height: 2px
+					width: 100%
+					background: white
+					top: 80%				
+					left: 0	
+			.top_mnu_btn:focus
+				outline: none	
+	.header_text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		flex-grow: 1
+		.logo_center_head
+			background: url(../img/usy.png) no-repeat 0 0 
+			width: 108px
+			height: 25px
+			padding: 0
+			margin: 50px 0
+			
+		.first_text
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.875em
+			color: #fff
+			margin: 0
+			padding: 0
+		.second_text
+			font-family: 'Open Sans', sans-serif
+			font-size: 4.500em
+			color: #fff
+			margin: 0
+			padding: 0
+			text-transform: uppercase
+			letter-spacing: 22px
+			font-weight: bold
+		.third_text
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.125em
+			color: #fff
+			margin: 0
+			padding: 0
+		.button_header
+			margin: 0 auto
+		.button_header_a
+			display: block 
+			width: 15%
+			min-width: 200px 
+			height: 48px
+			text-align: center
+			background-color: #cfc91d
+			color: #0b1016
+			text-transform: uppercase
+			font-family: 'Open Sans', sans-serif
+			font-size: 0.875em
+			font-weight: bold
+			letter-spacing: 3px
+			padding: 16px 0
+		.button_header_a:hover
+			color: #fff		
+.s_about
+	margin: auto
+	padding-top: 100px
+	.container
+		text-align:center
+		max-width: 100%
+		height: 100%
+		h2
+			font-family: 'Open Sans', sans-serif
+			font-size: 2.875em
+			color: #02918c
+			padding: 0
+			margin: 0
+			text-align: center
+			text-transform: uppercase
+			line-height: 35px	
+		.about_jpg	
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.000em
+			color: #7e8287
+			margin: 30px 0 33px 0
+			padding: 0
+			text-align: center
+			line-height: 35px
+		p
+			font-family: 'Open Sans', sans-serif
+			font-size: 1.000em
+			color: #7e8287
+			margin: 0
+			padding: 0
+			text-align: center
+			line-height: 41px	
+			span
+				font-family: 'Open Sans', sans-serif
+				font-size: 1.438em
+				font-weight: 800
+		.row
+			display: flex
+			justify-content: center
+			text-align: center
+			flex-wrap: wrap 
+			margin: 53px 0 0 0
+			.s_1_about 
+				.icon_desr
+					background: url(../img/1.png) no-repeat 50% 50% 
+					width: 31px
+					height: 33px
+					box-shadow: none
+					padding: 33px 0 40px 0
+					margin: 0 auto
+			.s_2_about 
+				.icon_desr
+					background: url(../img/2.png) no-repeat 50% 50% 
+					width: 36px
+					height: 33px
+					box-shadow: none
+					padding: 33px 0 40px 0
+					margin: 0 auto
+			.s_3_about 
+				.icon_desr
+					background: url(../img/3.png) no-repeat 50% 50% 
+					width: 33px
+					height: 33px
+					box-shadow: none
+					padding: 33px 0 40px 0
+					margin: 0 auto
+			.s_4_about 
+				.icon_desr
+					background: url(../img/4.png) no-repeat 50% 50% 
+					width: 33px
+					height: 33px
+					box-shadow: none
+					padding: 33px 0 40px 0
+					margin: 0 auto						
+			div:nth-child(1)
+				margin-left: 30px
+				padding-right: 60px
+				box-shadow: inset -1px 0 0 #d9dbdb
+			div:nth-child(2)
+				margin-left: 30px
+				padding-right: 60px
+				box-shadow: inset -1px 0 0 #d9dbdb
+			div:nth-child(3)
+				margin-left: 30px
+				padding-right: 60px
+				box-shadow: inset -1px 0 0 #d9dbdb
+			div:nth-child(4)
+				margin-left: 30px
+				margin-right: 37px	
+			.discription .descr_about	
+				font-family: 'Open Sans', sans-serif
+				font-size: 1.000em
+				color: #7e8287
+				margin: 0
+				padding: 0 0 19px 0
+				font-weight: bold
+			.discription .descr	
+				font-family: 'Open Sans', sans-serif
+				font-size: 0.688em
+				color: #7e8287
+				margin: 0
+				padding: 0 0 50px 0
+				line-height: 21px
+
+			
+.s_services
+	margin-top: 100px
+	max-width: 100%
+	background-color: #F0F0E8
+	
+	.container
+		margin: 0 auto
+		max-width: 1280px 
+		display: flex
+		justify-content: space-between 
+		
+		 
+		.services_bg
+			background: url(../img/serv_img.jpg) no-repeat
+			width: 50%
+			height: auto
+			margin: 0
+			padding: 0
+			background-size: cover
+		.services
+			margin-left: 90px
+			width: 50%
+			.services_discri
+				
+				
+				h2
+					font-family: 'Open Sans', sans-serif
+					font-size: 2.875em
+					color: #02918c
+					padding: 0
+					margin: 65px 0 0 0
+					text-transform: uppercase
+					line-height: 35px	
+				.services_jpg	
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					margin: 41px 0 28px 0
+					padding: 0
+					line-height: 12px
+				p
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					margin: 0
+					padding: 0		
+					line-height: 41px	
+			.row
+				display: flex
+				flex-wrap: wrap
+				margin: 58px 0 0 0
+				.discription
+					// margin-right: 110px		
+				.s_1_services 	
+					.icon_desr
+						background: url(../img/5.png) no-repeat 50% 50% 
+						width: 34px
+						height: 36px
+						padding: 0
+						margin: 0 0 16px 0
+				.s_2_services 
+					.icon_desr
+						background: url(../img/6.png) no-repeat 50% 50% 
+						width: 39px
+						height: 38px
+						padding: 0
+						margin: 0 0 16px 0
+				.s_3_services 
+					.icon_desr
+						background: url(../img/7.png) no-repeat 50% 50% 
+						width: 41px
+						height: 40px
+						padding: 0
+						margin: 0 0 16px 0
+				.s_4_services 
+					.icon_desr
+						background: url(../img/8.png) no-repeat 50% 50% 
+						width: 40px
+						height: 37px
+						padding: 0
+						margin: 0 0 16px 0		
+				div:nth-child(1)
+					margin-left: 0
+					padding-right: 110px
+				div:nth-child(2)
+					padding-right: 103px
+				div:nth-child(3)
+					padding-right: 110px
+				div:nth-child(4)
+					margin-right: 103px	
+				.discription .descr_services	
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					margin: 0
+					padding: 0 0 19px 0
+					font-weight: bold
+				.discription .descr	
+					font-family: 'Open Sans', sans-serif
+					font-size: 0.688em
+					color: #7e8287
+					margin: 0
+					padding: 0 0 43px 0
+					line-height: 21px
+					
+.s_work
+	max-width: 1280px
+	margin: 0px auto
+	padding-top: 100px
+	.container
+		max-width: 100%
+		.work
+			.work_discri
+				h2
+					font-family: 'Open Sans', sans-serif
+					font-size: 2.875em
+					color: #02918c
+					padding: 0
+					margin: 0
+					text-transform: uppercase
+					line-height: 35px
+					text-align: center	
+				.work_jpg	
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					margin: 33px 0 26px 0
+					padding: 0
+					line-height: 12px
+					text-align: center
+				p
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					margin: 0 0 78px 0 
+					padding: 0		
+					line-height: 37px
+					text-align: center	
+			.row
+				display: flex
+				justify-content: center
+				flex-wrap: wrap
+				padding: 0
+				margin: 0		
+				.col-md-3
+					padding: 0
+					margin: 0
+					width: 315.75px
+					height: 232px 
+					.container_desr
+						position: absolute
+						top: 9%
+						left: 7%
+						width: 270px
+						height: 198px
+						background-color: rgba(16,132,128,.7)
+						text-align: center 
+						padding: 0
+						margin: 0
+						color: #FFF
+						opacity: 0
+						transition: all .4s 
+					&:hover .container_desr	
+						opacity: 1 
+					p
+						font-family: 'Open Sans', sans-serif
+						font-size: 0.813em
+						margin: 0
+						padding: 0
+						line-height: 21px
+					h3		
+						font-family: 'Open Sans', sans-serif
+						font-size: 1.000em
+						font-weight: 800
+						padding: 42px 0 15px 0
+						margin: 0s
+						line-height: 0px
+				.work_desr1
+					background: url(../img/1.jpg) no-repeat					
+				.work_desr2
+					background: url(../img/2.jpg) no-repeat
+				.work_desr3
+					background: url(../img/3.jpg) no-repeat
+				.work_desr4
+					background: url(../img/4.jpg) no-repeat		
+				.work_desr5
+					background: url(../img/5.jpg) no-repeat
+				.work_desr6
+					background: url(../img/6.jpg) no-repeat
+				.work_desr7
+					background: url(../img/7.jpg) no-repeat
+				.work_desr8
+					background: url(../img/8.jpg) no-repeat			
+.s_contacts
+	padding-top: 100px
+	margin-bottom: 0
+	.contacts
+		.contacts_discri
+			h2
+				font-family: 'Open Sans', sans-serif
+				font-size: 2.875em
+				color: #02918c
+				padding: 0
+				margin: 0
+				text-transform: uppercase
+				line-height: 35px
+				text-align: center	
+			.contacts_jpg	
+				font-family: 'Open Sans', sans-serif
+				font-size: 1.000em
+				color: #7e8287
+				margin: 33px 0 26px 0
+				padding: 0
+				line-height: 12px
+				text-align: center
+			p
+				font-family: 'Open Sans', sans-serif
+				font-size: 1.000em
+				color: #7e8287
+				margin: 0 0 78px 0 
+				padding: 0		
+				line-height: 37px
+				text-align: center	
+		.contacts_form
+			background-color:	#0b0b0b
+			max-width: 100%
+			height: auto 	
+			
+			.form_1
+				display: flex
+				justify-content:  center
+				align-items: center
+				flex-direction: column
+				.form
+					width: 45%
+					min-width: 200px
+					height: 46px
+					margin-top: 50px
+					text-align: center
+					font-family: 'Open Sans', sans-serif
+					font-size: 1.000em
+					color: #7e8287
+					text-transform: uppercase
+					line-height: 37px
+					background-color:	#0b0b0b
+					border: none
+					border-bottom: 1px solid #7e8287
+					outline: none
+				input:nth-child(3)
+					margin-bottom: 64px
+				.button_form
+					margin: 0 0 70px 0
+				button
+					display: block 
+					width: 15%
+					min-width: 200px 
+					
+					height: 48px
+					text-align: center
+					background-color: #cfc91d
+					color: #0b1016
+					text-transform: uppercase
+					font-family: 'Open Sans', sans-serif
+					font-size: 0.875em
+					font-weight: bold
+					letter-spacing: 3px
+					padding: 14px 0
+					border: none
+				button:hover
+					color: #fff		
+			input:focus  
+				box-shadow: 0 1px 0 #2adcfc			
+footer
+	background-color:	#000
+	max-width: 100%
+	height: auto
+	.footer
+		p
+			text-align: center
+			color: #7e8287
+			text-transform: uppercase
+			font-family: 'Open Sans', sans-serif
+			font-size: 0.750em
+			letter-spacing: 1px
+			padding: 34px 0 24px 0
+			margin: 0
+			line-height: 37px
